@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alphabet Table</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Table alphabet</h1>
+    <div class="create-table-actions">
+        <div class="row">
+            <div class="input-field col s5">
+                <input placeholder="Please, put count rows in table" id="rows-table" type="number" class="validate" data-ui="count-rows">
+                <label for="rows-table">Count rows</label>
+            </div>
+            <div class="input-field col s5">
+                <input placeholder="Please, put count cells in table" id="cells-table" type="number" class="validate" data-ui="count-cells">
+                <label for="cells-table">Count Cells</label>
+            </div>
+            <div class="col s2">
+                <button class="btn btn-large waves-effect waves-light"  onclick="addTable()" type="submit" data-ui="create-table">Create
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <table id="myTable" data-ui="auto-table" class="table-data-wrapper"></table>
+    <div>
+        <table id="countTable" data-ui="count-table" ></table>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="table.js"></script>
+</body>
+</html>
